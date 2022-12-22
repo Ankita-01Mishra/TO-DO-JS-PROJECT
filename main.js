@@ -51,6 +51,9 @@ let deleteNote=(index)=>{
 
 //calling 2nd popup
 function popup2(){
+    // document.querySelector('#headeroneDiv').style.display="none"
+    // document.querySelector('#oneMainDiv').style.display="block"
+    // document.querySelector('#oneMainDiv').style.filter="blur(8px)"
     document.querySelector('#blur').style.filter="blur(7px)"
     document.querySelector('#popup2').style.display="block"
 }
@@ -96,6 +99,7 @@ let cutIfWorkDone=(index)=>{
 
 
 
+//To see a Particular Box........
 let particularDiv=(specificDiv)=>{
     console.log('pd created');
     console.log(specificDiv.parentElement.parentElement.innerHTML);
@@ -119,6 +123,8 @@ let particularDiv=(specificDiv)=>{
     ${specificDiv.parentElement.parentElement.innerHTML}
     </div>
     `
+    console.log(specificDiv.parentElement.nextSibling.nextSibling.nextSibling.onclick);
+    specificDiv.parentElement.nextSibling.nextSibling.nextSibling.style.display="none"
 }
 
 function Back(){
@@ -137,6 +143,9 @@ document.querySelector('.btnLast').addEventListener('click',(e)=>{
     document.querySelector('#popup').style.display="block"
 })
 
+// function popup3(){
+//     console.log(clicked);
+// }
 
 
 
